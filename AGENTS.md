@@ -11,7 +11,7 @@ folded back into the main Armath website (a separate repo at
 ## Where it lives
 
 - Directory: `/home/grisha_kh/Armath/Arapi/Janus/`
-- Not a git repo yet (run `git init` before your first commit).
+- Git repo: https://github.com/GrishaKh/Janus (public, `main`).
 - Sibling project at `~/Armath/Arapi/ArmathArapi-website/` is the eventual merge
   target — DO NOT touch it. Read-only reference if you need to compare.
 
@@ -180,14 +180,13 @@ editor and run it once, top-to-bottom.
 
 Things that would naturally come next, in rough priority order:
 
-1. `git init`, first commit, push to a fresh GitHub repo.
-2. Seed-data script (a few sample students + one device + a handful of synthetic
+1. Seed-data script (a few sample students + one device + a handful of synthetic
    logs) so the dashboard doesn't show empty states during a demo.
-3. ESP32 firmware sketch / mock-device script that POSTs realistic events to
+2. ESP32 firmware sketch / mock-device script that POSTs realistic events to
    `/api/attendance/events` for live demos.
-4. Architecture diagram in `README.md` or `docs/` for the competition pitch.
-5. Deployment (Vercel + Supabase) walkthrough in the README.
-6. Optional: rate-limit the `/lookup` endpoint per `student_code` (currently
+3. Architecture diagram in `README.md` or `docs/` for the competition pitch.
+4. Deployment (Vercel + Supabase) walkthrough in the README.
+5. Optional: rate-limit the `/lookup` endpoint per `student_code` (currently
    per-IP only).
 
 Pick from the list with the user, or wait for their next instruction.
